@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "425710910064",
+    "firebase_url": "https://dogeearn-5f865.firebaseio.com",
+    "project_id": "dogeearn-5f865",
+    "storage_bucket": "dogeearn-5f865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425710910064:android:fe90bebf3a13390f",
+        "android_client_info": {
+          "package_name": "com.dogearn.dogemoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425710910064-4fteijvsqrmhc19ih5nj4iqb4n7j893c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXwec-ir4VoYGK1-NdsqhhXnISGPAA5M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

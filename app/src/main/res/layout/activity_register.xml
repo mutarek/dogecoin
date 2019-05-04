@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:padding="30dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/manIcon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="30dp"
+            android:src="@drawable/man" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondlinerar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manIcon"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/firstnameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="First Name"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/lastnameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="Last Name"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/thiedliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userDogearnID"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/userPhoneET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Phone Number"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/userpasswordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/userEmailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondlinerar"
+        android:hint="E-mail"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userEmailET"
+        android:id="@+id/userDogearnID"
+        android:hint="Dogearn Address"
+        android:maxLength="34"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/thiedliner"
+        android:id="@+id/fourthlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+
+            android:id="@+id/userReferET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Refer (optional)"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:layout_weight="1"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/usercountryET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:layout_weight="1"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fourthlinear"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/termsAndCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup"
+        android:text="I accept terms and condition" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/termsAndCondition"
+        android:background="@drawable/withdrawbuttonshape"
+        android:text="Sign Up"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsID"
+        android:visibility="gone"/>
+
+    <com.google.android.gms.ads.doubleclick.PublisherAdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mAdviewregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9062980565707854/2086336979">
+    </com.google.android.gms.ads.doubleclick.PublisherAdView>
+
+
+</RelativeLayout>

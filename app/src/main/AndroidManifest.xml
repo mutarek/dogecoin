@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dogearn.dogemoney">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ExtrathreeActivity"></activity>
+        <activity android:name=".ExtratwoActivity" />
+        <activity android:name=".ExtraoneActivity" />
+        <activity
+            android:name=".WebsiteActivity"
+            android:theme="@style/WebsiteaCtionBar" />
+        <activity android:name=".OrginalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdstwentyteenActivity" />
+        <activity android:name=".AdsnineteenActivity" />
+        <activity android:name=".AdseightteenActivity" />
+        <activity android:name=".AdsseventeenActivity" />
+        <activity android:name=".AdssixteenActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".InvalidClickActivity" />
+        <activity android:name=".RefersystemActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AdsfifteenActivity" />
+        <activity android:name=".AdsfourteenActivity" />
+        <activity android:name=".AdsthirteenActivity" />
+        <activity android:name=".AdstwelveActivity" />
+        <activity android:name=".AdselevenActivity" />
+        <activity android:name=".AdstenActivity" />
+        <activity android:name=".AdsnineActivity" />
+        <activity android:name=".AdseightActivity" />
+        <activity android:name=".AdssevenActivity" />
+        <activity android:name=".AdssixActivity" />
+        <activity android:name=".AdsfiveActivity" />
+        <activity android:name=".AdsfourActivity" />
+        <activity android:name=".AdsthreeActivity" />
+        <activity android:name=".AdstwoActivity" />
+        <activity android:name=".AdsoneActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WithdrawActivity" />
+        <activity android:name=".VideoRewardActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".FInalClaimActivity" />
+        <activity android:name=".ClaimActivity" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".RegisterActivity" />
+
+        <service android:name=".MymessageingInstance">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyfirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

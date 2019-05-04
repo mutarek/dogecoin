@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdsoneActivity"
+    android:orientation="vertical"
+    android:background="@drawable/blur">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/countDownEightteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="#EC0000"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task Eighteen"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="#F50057"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nextTaskEightteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Task"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/textString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textone"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wwww.dogearn.info"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adseightteenadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="MEDIUM_RECTANGLE"
+            ads:adUnitId="ca-app-pub-7300440519666493/9268745857">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

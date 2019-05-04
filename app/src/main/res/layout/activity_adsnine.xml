@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdsnineActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/blur">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/countDownNine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#EC0000"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Task Nine"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#F50057"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/nextTaskNine"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Next Task"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textnine"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="wwww.dogearn.info"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tasknineadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7300440519666493/2890738448">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
